@@ -1,0 +1,133 @@
+# Dice Rolling Simulator
+
+## Overview
+
+The Dice Rolling Simulator is a simple Python application that generates random values for two virtual dice. Users can continue rolling the dice as many times as they like by responding to a prompt after each roll.
+
+## Features
+
+* Simulates two six-sided dice.
+* Generates random values between 1 and 6.
+* Allows unlimited rerolls.
+* Provides an interactive command-line experience.
+* Uses Python's built-in `random` module.
+
+## Technologies Used
+
+* Python 3
+* `random` module
+
+## Project Structure
+
+```text
+Dice-Rolling-Simulator/
+│
+├── dice_simulator.py
+└── README.md
+```
+
+## How to Run
+
+1. Ensure Python 3 is installed.
+2. Save the program as `dice_simulator.py`.
+3. Open a terminal in the project directory.
+4. Run the following command:
+
+```bash
+python dice_simulator.py
+```
+
+## Example
+
+### Input
+
+```text
+Welcome to rolling your dice!
+Do you want to continue(Y/N) Y
+```
+
+### Output
+
+```text
+Dice 1 : 4
+Dice 2 : 2
+```
+
+Another example:
+
+```text
+Dice 1 : 6
+Dice 2 : 6
+```
+
+## How It Works
+
+1. The program imports Python's `random` module.
+2. It displays a welcome message to the user.
+3. A `while` loop begins with the default answer set to `"Y"`.
+4. During each iteration:
+
+   * Two random integers between 1 and 6 are generated using `random.randint(1,6)`.
+   * The values are displayed as Dice 1 and Dice 2.
+5. The user is prompted to decide whether to continue:
+
+   * Entering `"Y"` rolls the dice again.
+   * Entering `"N"` exits the loop.
+6. After the user exits, the program displays a thank-you message.
+
+## Program Flow
+
+```text
+Start Program
+      ↓
+Display Welcome Message
+      ↓
+Roll Dice 1 and Dice 2
+      ↓
+Display Results
+      ↓
+Ask User to Continue
+      ↓
+   Y       N
+   ↓       ↓
+Repeat    Exit
+            ↓
+   Display Thank You Message
+```
+
+## Concepts Demonstrated
+
+* Loops (`while`)
+* User input
+* Conditional statements
+* Random number generation
+* String methods (`upper()`)
+* Command-line interaction
+
+## Example Output
+
+```text
+Welcome to rolling your dice!
+
+Dice 1 : 3
+Dice 2 : 5
+Do you want to continue(Y/N) Y
+
+Dice 1 : 1
+Dice 2 : 6
+Do you want to continue(Y/N) N
+
+Thankyou for using our program!
+```
+
+## Future Improvements
+
+* Add support for custom dice (e.g., 10-sided or 20-sided).
+* Display the total of both dice.
+* Track the number of rolls made during the session.
+* Add ASCII art representations of dice faces.
+* Implement a multiplayer mode for simple board games.
+
+## Author
+
+Created as a Python practice project to demonstrate loops, random number generation, and interactive user input.
